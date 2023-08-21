@@ -1,0 +1,33 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+pandas = "*"
+scikit-learn = "*"
+requests = "*"
+seaborn = "*"
+matplotlib = "*"
+mlflow = "*"
+hyperopt = "*"
+xgboost = "*"
+flask = "*"
+gunicorn = "*"
+azure-identity = "*"
+prefect = "*"
+tqdm = "*"
+joblib = "*"
+pyarrow = "*"
+psycopg = "*"
+psycopg-binary = "*"
+evidently = "*"
+numpy = "*"
+jupyter = "*"
+
+[dev-packages]
+ipykernel = "*"
+requests = "*"
+
+[requires]
+python_version = "3.11"
