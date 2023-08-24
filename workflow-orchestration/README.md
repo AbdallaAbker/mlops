@@ -54,3 +54,6 @@ To set up your project on Azure cloud, follow these steps:
 Make sure to replace placeholders like `<directory_on_vm>`, `<blob_container_name>`, `<storage_account>`, `<VM_username>`, `<VM_IP_ADDRESS>`, and `<MY_EXPERIMENT_NAME>` with your actual values.
 
 Follow these steps to effectively manage your machine learning pipeline and experiments both locally and on Azure.
+
+
+![Alt text](<Prefect Run.png>)
