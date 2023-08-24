@@ -11,9 +11,10 @@ os.environ["AZURE_STORAGE_ACCESS_KEY"] = "your Azure keysecrets"
 os.environ["AZURE_STORAGE_CONNECTION_STRING"] = "your Azure connection string"
 
 # set to your server URI
-remote_server_uri = "0.0.0.0" 
+remote_server_uri_locally = "0.0.0.0" 
+remote_server_uri_Azure_Cloud = "mlflowzoomcamp.westus2.cloudapp.azure.com"  #AZURE_CLOUD_DEPLOYMENT
 mlflow_tracking_uri = "sqlite:///mlflow.db"
-mlflow.set_tracking_uri(f"http://{remote_server_uri}:5000")
+mlflow.set_tracking_uri(f"http://{remote_server_uri_locally}:5000")
 
 
 # set MLflow experiment
@@ -40,7 +41,6 @@ def run_expirement(data_path):
         y_pred = lr.predict(X_val)
 
         mean_squared_error(y_val, y_pred, squared=False)
-
 
         rmse = mean_squared_error(y_val, y_pred, squared = False)
 

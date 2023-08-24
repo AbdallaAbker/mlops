@@ -12,9 +12,10 @@ os.environ["AZURE_STORAGE_ACCESS_KEY"] = "your Azure keysecrets"
 os.environ["AZURE_STORAGE_CONNECTION_STRING"] = "your Azure connection string"
 
 # set to your server URI
-remote_server_uri = "0.0.0.0" 
+remote_server_uri_locally = "0.0.0.0" 
+remote_server_uri_Azure_Cloud = "mlflowzoomcamp.westus2.cloudapp.azure.com"  #AZURE_CLOUD_DEPLOYMENT
 mlflow_tracking_uri = "sqlite:///mlflow.db"
-mlflow.set_tracking_uri(f"http://{remote_server_uri}:5000")
+mlflow.set_tracking_uri(f"http://{remote_server_uri_locally}:5000")
 # set MLflow experiment
 mlflow_experiment_name = "trafic-volume-prediction-train"
 mlflow.set_experiment(mlflow_experiment_name)
@@ -81,8 +82,8 @@ def main(data_path, max_evals, num_boost_round):
 if __name__ == '__main__':
 
     data_path = "./Expirement_Tracking/artifacts"
-    max_evals = 50
-    num_boost_round = 100
+    max_evals = 10
+    num_boost_round = 50
     
     #start
     main(data_path, max_evals, num_boost_round)
