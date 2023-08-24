@@ -27,3 +27,6 @@ run this command locally:
   
 - register_model: Registers the best-performing model:
   python register_model.py
+
+
+[Title](README.md) ![Title](blob-storage.png) ![Title](<mlflow azure.png>)

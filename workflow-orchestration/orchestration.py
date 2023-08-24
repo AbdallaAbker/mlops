@@ -8,8 +8,11 @@ from prefect import flow, task
 from sklearn.linear_model import LinearRegression
 from sklearn.metrics import mean_squared_error
 
+# set to your server URI
+remote_server_uri_locally = "0.0.0.0" 
+remote_server_uri_Azure_Cloud = "mlflowzoomcamp.westus2.cloudapp.azure.com"  #AZURE_CLOUD_DEPLOYMENT
 mlflow_tracking_uri = "sqlite:///mlflow.db"
-mlflow.set_tracking_uri(mlflow_tracking_uri)
+mlflow.set_tracking_uri(f"http://{remote_server_uri_locally}:5000")
 mlflow_experiment_name = "trafic-volume-prediction-train"
 mlflow.set_experiment(mlflow_experiment_name)
 
