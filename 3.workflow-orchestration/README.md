@@ -56,4 +56,5 @@ Make sure to replace placeholders like `<directory_on_vm>`, `<blob_container_nam
 Follow these steps to effectively manage your machine learning pipeline and experiments both locally and on Azure.
 
 
-![Alt text](<Prefect Run.png>)
+
+![Alt text](<../pictures/Prefect Run.png>)

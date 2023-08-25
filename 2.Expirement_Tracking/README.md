@@ -29,7 +29,10 @@ run this command locally:
   python register_model.py
 
 
+
+
 ![Alt text](<../pictures/mlflow azure.png>)
+
 
 ![Alt text](../pictures/blob-storage.png)
 
