@@ -30,3 +30,6 @@ your initial username/password is admin/admin
 
 
 ![Alt text](<../pictures/posgres db.png>)
+
+
+![Alt text](<../pictures/grafan dummy test.png>)
