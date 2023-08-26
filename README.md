@@ -1,6 +1,6 @@
 # Simple ML Model Development for Traffic Volume Prediction
 
-In this section, we will walk through the process of developing a basic Machine Learning (ML) model. The goal of this model is to predict the traffic volume on the I-94 ATR 301 westbound lane based on a set of features. We will use Python and Jupyter Notebook for this demonstration. This project is part of #mlopszoomcamp course.
+In this section, we will walk through the process of developing a basic Machine Learning (ML) model. The goal of this model is to predict the traffic volume on the I-94 ATR 301 westbound lane based on a set of features. We will use Python and Jupyter Notebook for this demonstration. This project is part of the #mlopszoomcamp https://github.com/DataTalksClub/mlops-zoomcamp course.
 
 ## Prerequisites
 
