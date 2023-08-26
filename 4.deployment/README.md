@@ -18,4 +18,6 @@ This command will assess the deployed model's functionality. The script test.py 
 Remember to use the virtual environment named (mlops) to execute the provided commands. The prompt (mlops) indicates that you are operating within the correct environment for this deployment.
 
 
+![Alt text](<../pictures/CICD pipeline.png>)
+
 ![./4.deployment/web-service](<../pictures/local deployment.png>)
