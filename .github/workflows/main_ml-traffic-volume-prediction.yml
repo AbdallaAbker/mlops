@@ -37,7 +37,7 @@ jobs:
         with:
           name: python-app
           path: |
-            . 
+            ./4.deployment/web-service
             !venv/
 
   deploy:
@@ -52,7 +52,7 @@ jobs:
         uses: actions/download-artifact@v2
         with:
           name: python-app
-          path: .
+          path: ./4.deployment/web-service
           
       - name: 'Deploy to Azure Web App'
         uses: azure/webapps-deploy@v2
