@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>My Page</title>
+    <link rel="stylesheet" href="static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Traffic Volume Prediction</h1>
+        <form method="post" action="{{ url_for('predict_datapoint') }}">
+            <div>
+                <label for="temp">Temperature (Kelvin)</label>
+                <input type="number" step="0.01" name="temp" id="temp" required>
+            </div>
+            <div>
+                <label for="rain_1h">Rain (mm)</label>
+                <input type="number" step="0.01" name="rain_1h" id="rain_1h" required>
+            </div>
+            <div>
+                <label for="snow_1h">Snow (mm)</label>
+                <input type="number" step="0.01" name="snow_1h" id="snow_1h" required>
+            </div>
+            <div>
+                <label for="clouds_all">Cloud (%)</label>
+                <input type="number" step="1" name="clouds_all" id="clouds_all" required>
+            </div>
+            <div>
+                <label for="weather_main">Weather Type</label>
+                <select name="weather_main" id="weather_main" required>
+                    <option value="Clear">Clear</option>
+                    <option value="Clouds">Clouds</option>
+                    <option value="Drizzle">Drizzle</option>
+                    <option value="Mist">Mist</option>
+                    <option value="Rain">Rain</option>
+                    <option value="Haze">Haze</option>
+                    <option value="Fog">Fog</option>
+                    <option value="Thunderstorm">Thunderstorm</option>
+                    <option value="Snow">Snow</option>
+                    <option value="Squall">Squall</option>
+                    <option value="Smoke">Smoke</option>
+                </select>
+            </div>
+            <div>
+                <label for="Rush Hour">Rush Hour</label>
+                <input type="number" step="1" name="Rush Hour" id="Rush Hour" required>
+            </div>
+            <input type="submit" value="Predict">
+        </form>
+        {% if results %}
+        <h2>The predicted score is {{ results }}</h2>
+        {% endif %}
+    </div>
+</body>
+</html>
